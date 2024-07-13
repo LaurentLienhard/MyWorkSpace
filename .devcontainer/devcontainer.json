@@ -1,0 +1,23 @@
+{
+    "build": { "dockerfile": "Dockerfile" },
+	"features": {
+		"ghcr.io/devcontainers-contrib/features/powershell:1": {
+			"version": "7.4.3"
+		}
+	},
+	"customizations": {
+		"vscode": {
+			"extensions": [
+				"redhat.ansible",
+				"srobert0560.sr-ansible-snippets",
+				"redhat.ansible",
+				"HashiCorp.terraform",
+				"4ops.packer",
+				"bbenoist.vagrant",
+				"ms-vscode.powershell",
+				"Supermaven.supermaven"
+			]
+		}
+	}
+
+}
