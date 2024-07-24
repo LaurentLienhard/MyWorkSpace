@@ -1,4 +1,4 @@
-FROM debian:bullseye
+FROM debian:latest
 LABEL maintainer="Laurent LIENHARD <laurent@lienhard.fr>" \
       description="A Docker image for dev my stuff easily." \
       version="1.0.0"
