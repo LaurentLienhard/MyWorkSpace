@@ -1,0 +1,14 @@
+#
+# requirements for Ansible
+#
+---
+# Install roles from Ansible Galaxy.
+roles:
+  - name: geerlingguy.java
+
+# Install collections from Ansible Galaxy.
+collections:
+  - name: community.general
+  - name: ansible.posix
+  - name: ansible.windows
+  - name: community.windows

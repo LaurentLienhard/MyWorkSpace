@@ -14,8 +14,7 @@
 				"HashiCorp.terraform",
 				"4ops.packer",
 				"bbenoist.vagrant",
-				"ms-vscode.powershell",
-				"Supermaven.supermaven"
+				"ms-vscode.powershell"
 			]
 		}
 	},

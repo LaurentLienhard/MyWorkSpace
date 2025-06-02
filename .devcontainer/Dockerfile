@@ -4,7 +4,12 @@ LABEL maintainer="Laurent LIENHARD <laurent@lienhard.fr>" \
       version="1.0.0"
 
 RUN apt-get update && apt-get install -y
-RUN apt-get install python3 python3-dev python3-venv tree python3-pip git direnv make bash curl wget sudo lsb-release software-properties-common xorriso vim sshpass apt-transport-https ca-certificates gpg -y 
+RUN apt-get install python3 python3-dev python3-venv ansible tree python3-pip git direnv locales virtualenv make bash curl wget sudo lsb-release software-properties-common xorriso vim sshpass apt-transport-https ca-certificates gpg -y 
+RUN dpkg-reconfigure locales
+RUN sed -i '/en_US.UTF-8/s/^# //g' /etc/locale.gen && \
+    locale-gen
+ENV LANG=en_US.UTF-8
+ENV LC_ALL=en_US.UTF-8
 
 # Install terraform / packer / vagrant
 RUN wget -O- https://apt.releases.hashicorp.com/gpg | sudo gpg --dearmor -o /usr/share/keyrings/hashicorp-archive-keyring.gpg && \

@@ -1,2 +1,3 @@
-ansible-workspace/.direnv
+
 ~/.ansible-vault-password
+.direnv
