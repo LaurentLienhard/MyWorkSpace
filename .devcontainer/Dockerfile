@@ -21,5 +21,7 @@ RUN wget https://github.com/terraform-docs/terraform-docs/releases/download/v0.1
     tar -xvf terraform-docs-v0.16.0-linux-amd64.tar.gz && \
     mv terraform-docs /usr/local/bin/
 
+RUN curl -fsSL https://d2lang.com/install.sh | sh -s --
+    
 RUN echo 'eval "$(direnv hook bash)"' >> ~/.bashrc
 RUN export LC_ALL=C.UTF-8
